@@ -76,7 +76,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) → **Attention Studio** → **Analyze**.
+Open [http://localhost:3000](http://localhost:3000) → **Attention Studio** — the demo loads `public/videos/stimulus-a.mp4` automatically → click **Analyze**.
 
 ---
 
