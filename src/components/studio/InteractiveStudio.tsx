@@ -453,8 +453,8 @@ export function InteractiveStudio() {
                       How well Resonate predicts attention in this stimulus.
                     </p>
                     <p className="text-xs leading-relaxed text-zinc-500">
-                      Hook quality is engineered from cortical engagement across the first 5
-                      seconds — the curiosity window that decides whether viewers stay or scroll.
+                      Full-brain engagement is projected with TRIBE v2-style cortical modeling —
+                      then mapped to where you should cut, re-pace, or re-script your video.
                     </p>
                     <HookScore score={result?.summary.hookScore ?? 0} visible={hasResults} />
                     <AttentionCharts

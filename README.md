@@ -1,53 +1,69 @@
 # Resonate
 
-**Engineer attention before you ship.**
+**See full-brain engagement before you publish.**
 
-Resonate is a pre-publish studio for creators and brands. It models how the brain pays attention to video — curiosity, emotion, where people drop — and tells you **what to change in your cut** so viewers stay to full engagement.
+Resonate is a pre-publish studio for creators and brands. It uses **Meta’s TRIBE v2 model** — trained on **fMRI brain scans** of people watching video — to project **how the whole brain responds** to your clip over time: curiosity, emotion, and where attention fades.
 
-Not views after the post. **Attention before publish.**
+Then it tells you **where to make changes in the video** — which moments to cut, re-pace, or re-script — so viewers stay through to **full engagement**.
+
+Not likes after upload. **Brain-level signal before go-live.**
 
 ---
 
 ## The problem
 
-- Creators film and edit for hours, then find out from the algorithm if the hook worked.
-- Brands spend millions on production, talent, and media — and still lose money when the first seconds don’t land.
-- Almost nobody tests **brain-level engagement** before go-live.
+- Creators and media teams edit blind, then learn from views whether the video worked.
+- A brand can spend millions on talent, production, and ads — and still lose reach when engagement dies at a specific second nobody caught in review.
+- There is no simple pre-publish tool that says: *“At 0:11s, predicted cortical engagement drops — change this beat here.”*
 
 ---
 
-## What Resonate does
+## How it works
 
-Upload a video. Resonate shows:
+1. **TRIBE v2 (foundation)** — Predicts cortical activity from **video, audio, and language** together. Trained on **1,000+ hours of fMRI** from hundreds of people watching real stimuli. Benchmarked at **~70× finer resolution** than earlier brain models and **several-fold better** than standard baselines on new clips.
+2. **Google Colab (this project)** — We ran TRIBE-style inference on creator clips to validate the pipeline.
+3. **Resonate (product)** — Turns those brain projections into **actionable edit guidance** anyone can use in a browser.
 
-| Output | What it means |
-|--------|----------------|
-| **Hook score** | How strong your opening is for predicted attention |
-| **Retention risks** | Exact seconds where viewers are likely to drop |
-| **AI rewrites** | What to say and how to re-hook — tied to those moments |
-| **Brain heatmap** | Where cortical engagement peaks and fades over time |
-
-**True vs Predicted** views let you compare noisy real-world signal with model projection — like the Meta TRIBE demo, built for **creator decisions**.
+> **Demo note:** The live app uses **simulated** TRIBE projections for the hackathon — same pipeline shape, no live model weights in production.
 
 ---
 
-## Under the hood (one paragraph)
+## What you get in the studio
 
-Powered by **[TRIBE v2](https://github.com/facebookresearch/tribev2)** — Meta’s open model trained on **1,000+ hours of fMRI** from people watching real video. Published benchmarks report **~70× finer brain resolution** than earlier models and **several-fold gains** over standard baselines on new clips.
+| Output | What it tells you |
+|--------|-------------------|
+| **Full-brain engagement map** | 3D cortical heatmap over time — where the brain lights up and cools down (True vs Predicted) |
+| **Attention & emotion curves** | Second-by-second predicted engagement across a 20s window |
+| **Engagement index** | Overall strength of predicted brain response to your cut |
+| **Drop-off timestamps** | Exact seconds where engagement is at risk — click to jump the player |
+| **Edit suggestions** | Before/after lines and framing — tied to *why* that moment under-activates |
 
-This hackathon build uses **simulated** projections for the live demo. Inference was explored in **Google Colab** on creator-style clips; **Resonate is the product layer** — scores, timestamps, and rewrites creators actually use.
+**That is the product:** not “we analyzed your video” — **we modeled brain response and pointed to the edits.**
+
+---
+
+## What to change in your video (examples)
+
+Resonate surfaces **where** to adjust, not just **whether** the video is good:
+
+- **Opening (0–3s)** — Strengthen curiosity before cortical engagement dips  
+- **Mid-roll (e.g. 11s)** — Re-hook or cut flat narration where language-network engagement falls  
+- **Pacing** — Shorten beats between peaks so reward-anticipation regions stay active  
+- **Script** — Swap weak lines for versions predicted to re-activate attention regions  
+
+Each suggestion links to a **timestamp** and a **brain region** (simulated ROI), so edits are specific.
 
 ---
 
 ## 60-second pitch (what to say)
 
-> Brands and creators spend millions on content — actors, shoots, ads — and still lose money when the hook fails. They only find out after it’s live.
+> Brands and creators spend millions on video — actors, crews, ads — and still lose money when engagement breaks at one second they never fixed. They find out after it’s live.
 >
-> **Resonate fixes that before publish.** We model how the brain pays attention using **TRIBE v2** — trained on **a thousand-plus hours of fMRI** from people watching real video, benchmarked to predict new clips far better than older brain models. **I ran it in Google Colab; Resonate is the product on top.**
+> **Resonate uses TRIBE v2** — trained on **over a thousand hours of fMRI** while people watched real video — to predict **full-brain engagement** on **your** clip. **I ran it in Google Colab; this app is the product layer.**
 >
-> **Upload your video. Get what to change** — hook, pacing, cuts — plus a **score**, **risk timestamps**, and **rewrites** tied to each moment, **so people watch to the end.**
+> **Upload your video.** You see **where the brain responds**, **where it drops**, and **what to change** — cuts, pacing, script — **so people stay to full engagement.**
 >
-> **Hours saved for creators. Millions protected for media teams.** **Resonate — engineer attention before you ship.**
+> **Pre-publish brain QA for creators and media teams.** **Resonate — engineer attention before you ship.**
 
 ---
 
@@ -60,12 +76,12 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) → scroll to **Attention Studio** → click **Analyze**.
+Open [http://localhost:3000](http://localhost:3000) → **Attention Studio** → **Analyze**.
 
 ---
 
 ## Medipol Hackathon 2026
 
-Cortical modeling architecture inspired by **Meta TRIBE v2** (open source).
+Cortical modeling inspired by **Meta TRIBE v2** (open source).
 
 © 2026 Resonate

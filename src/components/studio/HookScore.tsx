@@ -24,11 +24,14 @@ export function HookScore({ score, visible }: HookScoreProps) {
 
   return (
     <div className="rounded-xl border border-zinc-800 bg-zinc-950/80 p-6 text-center">
-      <p className="text-[10px] uppercase tracking-widest text-zinc-500">Hook quality</p>
+      <p className="text-[10px] uppercase tracking-widest text-zinc-500">
+        Full-brain engagement
+      </p>
       <p className="mt-2 text-5xl font-bold tabular-nums text-white">
         <span>{display}</span>
         <span className="text-2xl text-zinc-500">/100</span>
       </p>
+      <p className="mt-1 text-[10px] text-zinc-600">TRIBE v2 · simulated projection</p>
     </div>
   );
 }
