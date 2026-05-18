@@ -12,12 +12,11 @@ Not likes after upload. **Brain-level signal before go-live.**
 
 ## Demo video
 
-<video src="https://raw.githubusercontent.com/Nabilhassan12345/resonate/main/public/videos/stimulus-a.mp4" controls width="100%">
-  Your browser does not support HTML5 video. 
-  <a href="https://github.com/Nabilhassan12345/resonate/blob/main/public/videos/stimulus-a.mp4">Download or watch the demo video</a>.
-</video>
+Plays **inline on GitHub** — no download required.
 
-**[▶ Watch demo on GitHub](https://github.com/Nabilhassan12345/resonate/blob/main/public/videos/stimulus-a.mp4)** (opens the built-in player if the embed above does not show)
+https://github.com/Nabilhassan12345/resonate/blob/main/public/videos/stimulus-a.mp4
+
+![Attention Studio — TRIBE-style brain heatmap over your clip](./docs/demo.gif)
 
 ---
 
