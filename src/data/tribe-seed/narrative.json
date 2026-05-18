@@ -1,0 +1,68 @@
+{
+  "timeline": [
+    { "t": 0, "attention": 0.42, "emotion": 0.35 },
+    { "t": 1, "attention": 0.48, "emotion": 0.38 },
+    { "t": 2, "attention": 0.55, "emotion": 0.41 },
+    { "t": 3, "attention": 0.62, "emotion": 0.45 },
+    { "t": 4, "attention": 0.71, "emotion": 0.52 },
+    { "t": 5, "attention": 0.78, "emotion": 0.58 },
+    { "t": 6, "attention": 0.82, "emotion": 0.61 },
+    { "t": 7, "attention": 0.79, "emotion": 0.59 },
+    { "t": 8, "attention": 0.74, "emotion": 0.55 },
+    { "t": 9, "attention": 0.68, "emotion": 0.5 },
+    { "t": 10, "attention": 0.61, "emotion": 0.46 },
+    { "t": 11, "attention": 0.38, "emotion": 0.32 },
+    { "t": 12, "attention": 0.45, "emotion": 0.36 },
+    { "t": 13, "attention": 0.52, "emotion": 0.42 },
+    { "t": 14, "attention": 0.58, "emotion": 0.48 },
+    { "t": 15, "attention": 0.65, "emotion": 0.54 },
+    { "t": 16, "attention": 0.72, "emotion": 0.6 },
+    { "t": 17, "attention": 0.76, "emotion": 0.63 },
+    { "t": 18, "attention": 0.7, "emotion": 0.58 },
+    { "t": 19, "attention": 0.64, "emotion": 0.52 },
+    { "t": 20, "attention": 0.58, "emotion": 0.48 }
+  ],
+  "roiBySecond": {
+    "0": [
+      { "region": "language_network", "activation": 0.35 },
+      { "region": "reward_anticipation", "activation": 0.28 },
+      { "region": "default_mode", "activation": 0.22 }
+    ],
+    "4": [
+      { "region": "language_network", "activation": 0.72 },
+      { "region": "reward_anticipation", "activation": 0.68 },
+      { "region": "auditory_cortex", "activation": 0.55 }
+    ],
+    "11": [
+      { "region": "default_mode", "activation": 0.81 },
+      { "region": "language_network", "activation": 0.31 },
+      { "region": "reward_anticipation", "activation": 0.24 }
+    ],
+    "16": [
+      { "region": "reward_anticipation", "activation": 0.74 },
+      { "region": "language_network", "activation": 0.66 },
+      { "region": "early_visual", "activation": 0.42 }
+    ]
+  },
+  "retentionRisks": [
+    { "t": 11, "label": "Curiosity loop breaks — flat narration", "severity": "high" },
+    { "t": 7, "label": "Dopamine anticipation dip", "severity": "medium" }
+  ],
+  "summary": {
+    "hookScore": 78,
+    "viralStructure": "Open with tension → payoff at 4s → re-hook before 11s drop",
+    "viralBadge": "Curiosity-gap + delayed payoff"
+  },
+  "rewrites": [
+    {
+      "before": "Here's a productivity tip that changed my morning routine.",
+      "after": "This mistake is destroying your productivity before 9am.",
+      "reason": "Predicted curiosity regions under-activate in first 2.1s"
+    },
+    {
+      "before": "Let me walk you through the steps.",
+      "after": "Watch what happens when I skip step two — most people fail here.",
+      "reason": "Language network engagement drops 34% at t=11s without surprise framing"
+    }
+  ]
+}

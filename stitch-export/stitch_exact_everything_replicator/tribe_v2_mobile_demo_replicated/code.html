@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TRIBE v2 - An AI Model of the Human Brain</title>
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts for typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="typography">
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+  </style>
+<style data-purpose="custom-layout">
+    /* Custom styles for borders and specific UI elements */
+    .border-gray-custom {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 9999px;
+      transition: all 0.3s ease;
+    }
+    .btn-outline:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 1);
+    }
+    .gradient-line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    }
+  </style>
+</head>
+<body class="antialiased">
+<!-- BEGIN: HeroSection -->
+<section class="min-h-screen flex flex-col items-center justify-center px-6 py-20 text-center" data-purpose="hero-section">
+<h1 class="text-4xl md:text-5xl font-bold mb-6 text-balance leading-tight">
+      An AI Model of the Human Brain
+    </h1>
+<p class="text-gray-400 text-lg mb-12 max-w-md mx-auto">
+      Predicting neural responses to sight, sound and language.
+    </p>
+<!-- Hero Buttons -->
+<div class="flex flex-col gap-4 w-full max-w-xs mx-auto" data-purpose="hero-actions">
+<a class="btn-outline py-3 px-8 text-sm font-medium" href="#">Explore the Demo</a>
+<a class="btn-outline py-3 px-8 text-sm font-medium" href="#">Read the Paper</a>
+<a class="btn-outline py-3 px-8 text-sm font-medium" href="#">Access the Code</a>
+<a class="btn-outline py-3 px-8 text-sm font-medium" href="#">Download the Model</a>
+</div>
+<!-- Brain Visualization -->
+<div class="mt-20 w-full max-w-3xl">
+<img alt="Brain Activity Visualization" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugb-98qSyItOvTsBkdbUnDeEIUiez1WK6DC5gonS-euyeJhjnZ60f0QwUE9keyaiT4ZNFllQ0O2fX0VuwSOxBs9pZSt82odY7ujmGrBpsIpF7GeCHgNy8O_n568141Spks7Cjwl8dTxKmbe2B0NP0dNtHEVhumpXSOLXjGbK1KeK5qQyxl3rjRKp-xcnNcAS7wezvGaPuJ8sSph-4wEKPNWSKE4H4SbZihP1M5-WvHC5aU2M5QUbf4S-rY"/>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: MappingBrainFunctions -->
+<section class="px-6 py-20 border-t border-gray-800" data-purpose="mapping-functions">
+<div class="max-w-xl mx-auto">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold max-w-[200px] leading-tight">
+          Mapping Brain Functions: The Challenge of Scale
+        </h2>
+<div class="flex gap-2">
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<div class="space-y-6 text-gray-400 leading-relaxed">
+<p>
+          For decades, neuroscience has faced a major bottleneck: the need for new brain recordings for every new experiment. This has made understanding brain mechanisms slow, costly, and difficult to scale and integrate.
+        </p>
+<p>
+          Today, we're releasing TRIBE v2. This foundation model acts as a digital mirror of human brain activity in response to sight, sound and language — transforming months of lab work into seconds of computation.
+        </p>
+</div>
+</div>
+</section>
+<!-- END: MappingBrainFunctions -->
+<!-- BEGIN: ArchitectureSection -->
+<section class="px-6 py-20 bg-[#0a0a0a]" data-purpose="architecture">
+<div class="max-w-xl mx-auto">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold max-w-[200px] leading-tight">
+          TRIBE v2: a three-stage architecture
+        </h2>
+<div class="flex gap-2">
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<p class="text-gray-400 mb-10">TRIBE v2 predicts brain activity through a three-stage pipeline:</p>
+<div class="space-y-8">
+<div class="flex gap-4">
+<span class="flex-shrink-0 w-6 h-6 rounded-full bg-white text-black flex items-center justify-center text-xs font-bold">1</span>
+<p class="text-sm text-gray-400 leading-relaxed">
+<strong class="text-white">Tri-modal Encoding:</strong> The model utilizes pretrained <span class="text-white">audio, video</span> and <span class="text-white">text</span> embeddings to capture the features shared by AI models and the human brain.
+          </p>
+</div>
+<div class="flex gap-4">
+<span class="flex-shrink-0 w-6 h-6 rounded-full bg-white text-black flex items-center justify-center text-xs font-bold">2</span>
+<p class="text-sm text-gray-400 leading-relaxed">
+<strong class="text-white">Universal Integration:</strong> These embeddings are processed by a transformer that can learn universal representations shared across all stimuli, tasks, and individuals.
+          </p>
+</div>
+<div class="flex gap-4">
+<span class="flex-shrink-0 w-6 h-6 rounded-full bg-white text-black flex items-center justify-center text-xs font-bold">3</span>
+<p class="text-sm text-gray-400 leading-relaxed">
+<strong class="text-white">Brain Mapping:</strong> Finally, a subject layer maps these universal representations onto individual fMRI voxels - 3D pixels that track neural activity through slow changes in blood flow and oxygenation.
+          </p>
+</div>
+</div>
+<!-- Pipeline Diagram Placeholder -->
+<div class="mt-16 bg-zinc-900 rounded-xl p-8 border border-zinc-800" data-purpose="pipeline-visual">
+<div class="grid grid-cols-2 gap-4 text-center">
+<div class="space-y-4">
+<div class="h-1 bg-zinc-700 rounded-full mx-auto w-1/2"></div>
+<p class="text-[10px] text-zinc-500 uppercase tracking-widest">Input</p>
+<div class="flex justify-center gap-2">
+<div class="w-8 h-8 bg-zinc-800 border border-zinc-700 rounded flex items-center justify-center"><svg class="w-4 h-4 text-zinc-400" fill="currentColor" viewbox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path></svg></div>
+<div class="w-8 h-8 bg-zinc-800 border border-zinc-700 rounded flex items-center justify-center"><svg class="w-4 h-4 text-zinc-400" fill="currentColor" viewbox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"></path></svg></div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="h-1 bg-blue-500 rounded-full mx-auto w-1/2"></div>
+<p class="text-[10px] text-zinc-500 uppercase tracking-widest">Predicted</p>
+<div class="flex justify-center">
+<div class="w-12 h-12 rounded-full border-2 border-dashed border-zinc-700 flex items-center justify-center">
+<div class="w-8 h-8 bg-zinc-800 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ArchitectureSection -->
+<!-- BEGIN: KeyImprovements -->
+<section class="px-6 py-20" data-purpose="key-improvements">
+<div class="max-w-xl mx-auto">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold">Key Improvements</h2>
+<div class="flex gap-2">
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+</div>
+<p class="text-gray-400 mb-16">
+        Building on <strong class="text-white">TRIBE</strong>, our <strong class="text-white">Argonauts 2025-winning architecture</strong>, we scaled TRIBE v2 across three key dimensions:
+      </p>
+<div class="space-y-20">
+<!-- Scaled Resolution -->
+<div class="text-center space-y-6">
+<div class="mx-auto w-12 h-12 flex items-center justify-center">
+<svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="text-lg font-bold">Scaled resolution</h3>
+<p class="text-xs text-gray-400 leading-relaxed px-4">
+            TRIBE v2 predicts whole brain activity across 70,000 voxels — a far more precise picture than the 1,000 cortical predictions of TRIBE v1.
+          </p>
+</div>
+<!-- Scaled Data -->
+<div class="text-center space-y-6">
+<div class="mx-auto w-12 h-12 flex items-center justify-center">
+<svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="text-lg font-bold">Scaled data</h3>
+<p class="text-xs text-gray-400 leading-relaxed px-4">
+            While TRIBE v1 trained on 4 volunteers, TRIBE v2 combines long-form recordings with large cohorts to enable zero-shot generalization.
+          </p>
+</div>
+<!-- High-quality predictions -->
+<div class="text-center space-y-6">
+<div class="mx-auto w-12 h-12 flex items-center justify-center">
+<svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="text-lg font-bold">High-quality predictions</h3>
+<p class="text-xs text-gray-400 leading-relaxed px-4">
+            TRIBE v2 substantially outperforms traditional baseline models, delivering high-fidelity predictions for complex stimuli.
+          </p>
+</div>
+</div>
+<p class="mt-20 text-gray-400 text-sm italic">
+        These improvements evolve TRIBE from a competition-winning model to a practical tool for neuroscience research and scientific simulation.
+      </p>
+</div>
+</section>
+<!-- END: KeyImprovements -->
+<!-- BEGIN: ScalingLaws -->
+<section class="px-6 py-20 bg-[#0a0a0a]" data-purpose="scaling-laws">
+<div class="max-w-xl mx-auto">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold">Scaling Laws</h2>
+<div class="flex gap-2">
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed mb-12">
+        TRIBE v2 follows a scaling law: performance increases log-linearly as we train it with more data. Because this prediction performance has not yet reached a plateau, this approach will likely continue to improve as more fMRI data become available.
+      </p>
+<!-- Prediction Score Graph Placeholder -->
+<div class="relative pt-10" data-purpose="graph">
+<div class="absolute left-0 top-0 text-[10px] text-zinc-500 uppercase -rotate-90 origin-top-left -translate-y-full mt-24">Prediction Score</div>
+<div class="border-l border-b border-zinc-700 h-48 w-full relative flex items-end">
+<!-- Graph Line (SVG representation) -->
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none">
+<polyline fill="none" points="0,160 40,120 80,100 120,90 160,75 200,60 280,40" stroke="#ef4444" stroke-width="2"></polyline>
+<circle cx="0" cy="160" fill="#ef4444" r="3"></circle>
+<circle cx="40" cy="120" fill="#ef4444" r="3"></circle>
+<circle cx="80" cy="100" fill="#ef4444" r="3"></circle>
+<circle cx="120" cy="90" fill="#ef4444" r="3"></circle>
+<circle cx="160" cy="75" fill="#ef4444" r="3"></circle>
+<circle cx="200" cy="60" fill="#ef4444" r="3"></circle>
+<circle cx="280" cy="40" fill="#ef4444" r="3"></circle>
+</svg>
+</div>
+<div class="flex justify-between mt-4 text-[10px] text-zinc-500 font-mono">
+<span>1</span>
+<span>10</span>
+<span>100</span>
+</div>
+<div class="text-center mt-6 text-[10px] text-zinc-500 uppercase tracking-widest">Hours of Training Data Per Subject</div>
+</div>
+</div>
+</section>
+<!-- END: ScalingLaws -->
+<!-- BEGIN: PerformanceSection -->
+<section class="px-6 py-20" data-purpose="performance">
+<div class="max-w-xl mx-auto">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold max-w-[200px] leading-tight">Outperforming individual fMRI scans</h2>
+<div class="flex gap-2">
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+</div>
+<div class="space-y-6 text-sm text-gray-400 leading-relaxed">
+<p>
+          Unlike models built for a single person, TRIBE v2 identifies how patterns of neural activity are shared across individuals. This enables zero-shot generalization: TRIBE v2 accurately predicts the brain response to new stimuli, tasks and subjects without retraining—achieving a 2-3x improvement on <strong class="text-white">auditory</strong> and <strong class="text-white">visual</strong> datasets.
+        </p>
+<p>
+          Surprisingly, <strong class="text-white">TRIBE v2's predictions are often more representative of the typical response than an actual fMRI scan.</strong> While raw recordings are inherently noisy – distorted by heartbeats, movement and device artifacts – TRIBE v2 predicts a canonical brain response, which is actually more correlated with the group's average neural activity than almost any single fMRI recording.
+        </p>
+</div>
+<!-- Bar Chart Placeholder -->
+<div class="mt-16 bg-zinc-900/50 p-6 rounded-lg" data-purpose="bar-chart">
+<div class="flex justify-end gap-4 mb-6 text-[10px] text-zinc-500">
+<div class="flex items-center gap-1">
+<div class="w-2 h-2 bg-zinc-600"></div> <span>Other Brain Models</span>
+</div>
+<div class="flex items-center gap-1">
+<div class="w-2 h-2 bg-red-500"></div> <span>TRIBE</span>
+</div>
+</div>
+<div class="space-y-8">
+<div class="space-y-2">
+<p class="text-[10px] uppercase text-zinc-500">Speech</p>
+<div class="flex items-center gap-2">
+<div class="flex-1 space-y-1">
+<div class="h-4 bg-zinc-600 w-[60%] rounded-r"></div>
+<div class="h-4 bg-red-500 w-[85%] rounded-r"></div>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<p class="text-[10px] uppercase text-zinc-500">Pictures</p>
+<div class="flex items-center gap-2">
+<div class="flex-1 space-y-1">
+<div class="h-4 bg-zinc-600 w-[45%] rounded-r"></div>
+<div class="h-4 bg-red-500 w-[70%] rounded-r"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 text-center text-[10px] text-zinc-500 uppercase tracking-widest">Prediction Score</div>
+</div>
+</div>
+</section>
+<!-- END: PerformanceSection -->
+<!-- BEGIN: ExperimentsSection -->
+<section class="px-6 py-20 bg-[#0a0a0a]" data-purpose="in-silico-experiments">
+<div class="max-w-xl mx-auto">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold max-w-[200px] leading-tight">In-silico experiments replicate seminal discoveries</h2>
+<div class="flex gap-2">
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed mb-12">
+        By simulating classic experimental protocols, we can inspect the brain in silico. For example, when presented with a <strong class="text-white">sentence</strong>, TRIBE v2 predicts fMRI activity in the well known language network. This approach can effectively identify the brain areas typically associated with:
+      </p>
+<!-- Grid of Categories -->
+<div class="grid grid-cols-3 gap-y-12 text-center" data-purpose="experiment-grid">
+<div class="space-y-3">
+<div class="mx-auto w-10 h-10 border border-zinc-700 rounded-lg flex items-center justify-center">
+<svg class="w-6 h-6 text-zinc-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<p class="text-[10px] font-bold">Places <span class="text-zinc-600">ⓘ</span></p>
+</div>
+<div class="space-y-3">
+<div class="mx-auto w-10 h-10 border border-zinc-700 rounded-lg flex items-center justify-center">
+<svg class="w-6 h-6 text-zinc-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<p class="text-[10px] font-bold">Bodies <span class="text-zinc-600">ⓘ</span></p>
+</div>
+<div class="space-y-3">
+<div class="mx-auto w-10 h-10 border border-zinc-700 rounded-lg flex items-center justify-center">
+<svg class="w-6 h-6 text-zinc-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<p class="text-[10px] font-bold">Faces <span class="text-zinc-600">ⓘ</span></p>
+</div>
+<div class="space-y-3">
+<div class="mx-auto w-10 h-10 border border-zinc-700 rounded-lg flex items-center justify-center">
+<svg class="w-6 h-6 text-zinc-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<p class="text-[10px] font-bold">Speech <span class="text-zinc-600">ⓘ</span></p>
+</div>
+<div class="space-y-3">
+<div class="mx-auto w-10 h-10 border border-zinc-700 rounded-lg flex items-center justify-center">
+<svg class="w-6 h-6 text-zinc-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<p class="text-[10px] font-bold">Semantics <span class="text-zinc-600">ⓘ</span></p>
+</div>
+<div class="space-y-3">
+<div class="mx-auto w-10 h-10 border border-zinc-700 rounded-lg flex items-center justify-center">
+<svg class="w-6 h-6 text-zinc-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<p class="text-[10px] font-bold">Emotions <span class="text-zinc-600">ⓘ</span></p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ExperimentsSection -->
+<!-- BEGIN: IntegrationSection -->
+<section class="px-6 py-20" data-purpose="integrated-representation">
+<div class="max-w-xl mx-auto">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold max-w-[250px] leading-tight">How the brain builds an integrated representation of the world</h2>
+<div class="flex gap-2">
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed">
+        Finally, TRIBE v2 offers a powerful tool to understand how and where the auditory, visual and linguistic representations are integrated in the brain. Ablation experiments show where each pretrained embedding specifically predict brain activity across both group averages and individuals.
+      </p>
+</div>
+</section>
+<!-- END: IntegrationSection -->
+<!-- BEGIN: FutureResearch -->
+<section class="px-6 py-20 bg-[#0a0a0a]" data-purpose="future-research">
+<div class="max-w-xl mx-auto text-center">
+<div class="flex items-center justify-between mb-8 text-left">
+<h2 class="text-2xl font-bold max-w-[200px] leading-tight">Accelerating Future Research</h2>
+<div class="flex gap-2">
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+<button class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button>
+</div>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed mb-16 text-left">
+        As per usual, we open-source the TRIBE v2 paper, code and model weights to help accelerate research across three key areas:
+      </p>
+<div class="space-y-16">
+<div class="space-y-4">
+<div class="mx-auto w-16 h-16 border border-zinc-700 rounded-2xl flex items-center justify-center bg-zinc-900/50">
+<svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h3 class="font-bold">Neuroscience</h3>
+<p class="text-[11px] text-zinc-500 leading-relaxed px-10">Simulate brain responses to help plan actual neuroscience experiments and ultimately deepen our understanding of the human brain.</p>
+</div>
+<div class="space-y-4">
+<div class="mx-auto w-16 h-16 border border-zinc-700 rounded-2xl flex items-center justify-center bg-zinc-900/50">
+<div class="w-10 h-10 border-2 border-white rounded-lg flex items-center justify-center font-bold text-xs">AI</div>
+</div>
+<h3 class="font-bold">Artificial Intelligence</h3>
+<p class="text-[11px] text-zinc-500 leading-relaxed px-10">Guide the development of AI architectures to match the efficiency of the human brain.</p>
+</div>
+<div class="space-y-4">
+<div class="mx-auto w-16 h-16 border border-zinc-700 rounded-2xl flex items-center justify-center bg-zinc-900/50">
+<svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h3 class="font-bold">Healthcare</h3>
+<p class="text-[11px] text-zinc-500 leading-relaxed px-10">Provide a foundation to improve the diagnosis and treatment of brain conditions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FutureResearch -->
+<!-- BEGIN: FooterCTA -->
+<section class="px-6 py-20 text-center border-t border-gray-800" data-purpose="footer-cta">
+<div class="mb-12">
+<div class="w-12 h-12 bg-zinc-800 rounded-full mx-auto mb-4 flex items-center justify-center border border-zinc-700">
+<span class="text-xs font-bold">M</span>
+</div>
+<p class="text-lg font-bold">TRIBE v2</p>
+<p class="text-sm text-zinc-500">Built by Meta FAIR</p>
+</div>
+<div class="flex flex-col gap-4 w-full max-w-xs mx-auto">
+<a class="btn-outline py-3 px-8 text-sm font-medium bg-white text-black border-white hover:bg-gray-200" href="#">Explore the Demo</a>
+<a class="btn-outline py-3 px-8 text-sm font-medium" href="#">Read the Paper</a>
+<a class="btn-outline py-3 px-8 text-sm font-medium" href="#">Access the Code</a>
+</div>
+</section>
+<!-- END: FooterCTA -->
+<!-- BEGIN: CookieBanner -->
+<div class="fixed bottom-0 left-0 right-0 p-4 z-50" data-purpose="cookie-consent">
+<div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow-2xl max-w-md mx-auto">
+<h4 class="text-lg font-bold mb-2">Allow the use of cookies from Meta on this browser?</h4>
+<p class="text-xs text-zinc-400 mb-6">
+        To find out more about the use of cookies, see our <a class="underline" href="#">Privacy Policy</a> and <a class="underline" href="#">Cookies Policy</a>.
+      </p>
+<div class="flex flex-col gap-3">
+<button class="w-full py-3 border border-zinc-700 rounded-full text-sm font-medium hover:bg-zinc-800">Decline</button>
+<button class="w-full py-3 bg-white text-black border border-white rounded-full text-sm font-bold hover:bg-zinc-200">Accept</button>
+</div>
+</div>
+</div>
+<!-- END: CookieBanner -->
+<!-- BEGIN: GlobalFooter -->
+<footer class="px-6 py-10 border-t border-zinc-900 text-[10px] text-zinc-600 uppercase tracking-widest flex flex-wrap justify-center gap-6" data-purpose="global-footer">
+<a href="#">Privacy</a>
+<a href="#">Terms</a>
+<a href="#">Cookies</a>
+<a href="#">AI Demo</a>
+<div class="w-full text-center mt-4">
+<p>© 2024 Meta. All Rights Reserved.</p>
+</div>
+</footer>
+<!-- END: GlobalFooter -->
+</body></html>

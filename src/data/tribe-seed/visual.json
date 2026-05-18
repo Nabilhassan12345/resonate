@@ -1,0 +1,63 @@
+{
+  "timeline": [
+    { "t": 0, "attention": 0.58, "emotion": 0.44 },
+    { "t": 1, "attention": 0.64, "emotion": 0.48 },
+    { "t": 2, "attention": 0.7, "emotion": 0.52 },
+    { "t": 3, "attention": 0.75, "emotion": 0.56 },
+    { "t": 4, "attention": 0.68, "emotion": 0.5 },
+    { "t": 5, "attention": 0.62, "emotion": 0.46 },
+    { "t": 6, "attention": 0.55, "emotion": 0.4 },
+    { "t": 7, "attention": 0.48, "emotion": 0.36 },
+    { "t": 8, "attention": 0.52, "emotion": 0.39 },
+    { "t": 9, "attention": 0.6, "emotion": 0.45 },
+    { "t": 10, "attention": 0.72, "emotion": 0.58 },
+    { "t": 11, "attention": 0.8, "emotion": 0.65 },
+    { "t": 12, "attention": 0.76, "emotion": 0.61 },
+    { "t": 13, "attention": 0.7, "emotion": 0.55 },
+    { "t": 14, "attention": 0.65, "emotion": 0.5 },
+    { "t": 15, "attention": 0.58, "emotion": 0.44 },
+    { "t": 16, "attention": 0.5, "emotion": 0.38 },
+    { "t": 17, "attention": 0.46, "emotion": 0.34 },
+    { "t": 18, "attention": 0.42, "emotion": 0.3 },
+    { "t": 19, "attention": 0.4, "emotion": 0.28 },
+    { "t": 20, "attention": 0.38, "emotion": 0.26 }
+  ],
+  "roiBySecond": {
+    "0": [
+      { "region": "early_visual", "activation": 0.78 },
+      { "region": "fusiform_face", "activation": 0.62 },
+      { "region": "reward_anticipation", "activation": 0.45 }
+    ],
+    "10": [
+      { "region": "early_visual", "activation": 0.88 },
+      { "region": "fusiform_face", "activation": 0.71 },
+      { "region": "reward_anticipation", "activation": 0.59 }
+    ],
+    "16": [
+      { "region": "early_visual", "activation": 0.42 },
+      { "region": "default_mode", "activation": 0.65 },
+      { "region": "reward_anticipation", "activation": 0.28 }
+    ]
+  },
+  "retentionRisks": [
+    { "t": 16, "label": "Visual novelty exhaustion — pattern repeat", "severity": "high" },
+    { "t": 7, "label": "Face ROI under-stimulation", "severity": "medium" }
+  ],
+  "summary": {
+    "hookScore": 84,
+    "viralStructure": "Lead with motion contrast → face close-up at 10s → cut before 16s fatigue",
+    "viralBadge": "Visual punch + FFA spike"
+  },
+  "rewrites": [
+    {
+      "before": "Check out this before and after.",
+      "after": "Your brain can't look away from second 3 — here's why.",
+      "reason": "Early visual cortex peaks when motion contrast precedes reveal"
+    },
+    {
+      "before": "Thanks for watching, link in bio.",
+      "after": "One more cut at 14s — the payoff most editors delete.",
+      "reason": "Retention cliff at t=16s without final micro-hook"
+    }
+  ]
+}
